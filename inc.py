@@ -18,5 +18,12 @@ def login():
 def register():
     return render_template("register.html")
 
-if __name__ == "__main__":
-    app.run(debug=True)
+@app.route("/main1")
+def main1():
+    return render_template("main1.html")
+
+@app.route("/main2")
+def main3():
+    return render_template("main2.html")
+
+app.run(debug=True)
