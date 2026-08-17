@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+    <h1>Goods list</h1>
+
+    {% if products %}
+        <ul>
+            {% for product in products %}
+                <li>{{ product }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Товари відсутні</p>
+    {% endif %}
+</body>
+</html>
+`
